@@ -1,0 +1,22 @@
+<div class="calculator-container">
+    <h1>String Calculator</h1>
+  
+    <label for="numbers">Enter numbers (comma, newline, or custom delimiter):</label>
+    <input
+      type="text"
+      id="numbers"
+      [(ngModel)]="numbers"
+      placeholder="e.g. 1,2,3 or //;\n1;2"
+    />
+  
+    <button (click)="calculateSum()">Calculate Sum</button>
+  
+    <div *ngIf="sum !== null">
+      <h2>Sum: {{ sum }}</h2>
+    </div>
+  
+    <div *ngIf="errorMessage">
+      <p class="error">{{ errorMessage }}</p>
+    </div>
+  </div>
+  

@@ -1,0 +1,35 @@
+.calculator-container {
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+  }
+  
+  .input-group, .button-group, .result, .error-message {
+    margin: 15px 0;
+  }
+  
+  input {
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .result h2 {
+    color: green;
+  }
+  
+  .error-message {
+    color: red;
+    font-weight: bold;
+  }
+  
